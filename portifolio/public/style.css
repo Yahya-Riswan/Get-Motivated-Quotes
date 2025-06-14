@@ -1,0 +1,157 @@
+@font-face {
+  font-family: null;
+  src: url(./Null_Free.otf);
+}
+@font-face {
+  font-family: etna;
+  src: url(./etna-free-font.otf);
+}
+*{ 
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: black;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: white;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: black;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 2px solid white;
+    border-left: none;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(0, 0, 0, 0.881);
+}
+.header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+.header .left{
+    width:40%;
+    font-family: etna;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+.header .left .name{
+     font-family: null;
+     color: white;
+     font-size: 68px;
+     letter-spacing:2px;
+}
+.header .left .name span{
+    font-size: 30px;
+    color:#38b6ff;
+}
+.header .left h2{  
+    font-size: 32px;
+    color: #d9d9d9;
+    opacity: .85; 
+}
+.header .left h3{
+    font-size: 20px;
+    color: #d9d9d9;
+    opacity: .85;
+}
+/* .header .left .social{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.header .left .social div{
+    width: 40px;
+}
+.header .left .social div img{
+    width: 40px;
+} */
+.header .left .social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.header .left .social a {
+    cursor: pointer;
+    width: auto;
+    height: 40px;
+    background-color: black;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 10px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    transition: box-shadow 0.9s ease-in;
+    overflow: hidden; 
+    box-shadow: 1px 1px 5px rgb(87, 87, 87), 1px 1px 5px rgb(87, 87, 87) inset;
+}
+
+.header .left .social a h4 {
+    font-size: 18px;
+    color: white;
+    
+    opacity: 0;
+    max-width: 0;
+    transition: all 1s ease;
+    white-space: nowrap; 
+}
+
+.header .left .social a img {
+    width: 40px !important;
+}
+
+.header .left .social a:hover {
+    box-shadow: 2px 2px 5px rgb(151, 151, 151), 2px 2px 5px rgb(151, 151, 151) inset;
+}
+
+.header .left .social a:hover h4 {
+    opacity: 1;
+    max-width: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.header .right{
+    position: relative;
+    width: 60%;
+    height: 100vh;
+}
+.header .right .round_blue{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #38b6ff;
+    clip-path: circle();
+    bottom: 75px;
+    right: 100px;
+    z-index: 2;
+}
+.header .right .round_light{
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    background-color: #ffffff;
+    clip-path: circle();
+    bottom: 50px;
+    right: 75px;
+    z-index: 0;
+    filter: blur(600px);
+}
+.space{
+    height: 200vh;
+
+}
